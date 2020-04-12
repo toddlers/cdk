@@ -6,6 +6,7 @@ from fleetapi.fleetapi_stack import FleetapiStack
 
 
 app = core.App()
+env_USA = core.Environment(account="<ACCOUNT_ID>", region="us-east-1")
 FleetapiStack(app, "fleetapi")
 
 app.synth()
